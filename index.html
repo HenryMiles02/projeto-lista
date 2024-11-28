@@ -15,9 +15,44 @@
         </div>
     </header>
     <main>
-        <a href="#">Voltar</a>
+        <a href="#" id="btn-voltar">Voltar</a>
         <h1>Compras da semana</h1>
-        <input type="text">
+        <div class="container-input">
+            <input type="text" id="-input-item" name="item" placeholder="Adicione um novo item" required>
+            <button>adicionar item</button>
+        </div>
+        <div class="input-list">
+            <div class="card-item">
+                <input type="checkbox" id="item">
+                <label for="none">Pão de forma</label>
+                <img src="img/lixeira.png" alt="lixeira">
+            </div>
+            <div class="card-item">
+                <input type="checkbox" id="item">
+                <label for="none">Café preto</label>
+                <img src="img/lixeira.png" alt="lixeira">
+            </div>
+            <div class="card-item">
+                <input type="checkbox" id="item">
+                <label for="none">Suco de laranja</label>
+                <img src="img/lixeira.png" alt="lixeira">
+            </div>
+            <div class="card-item">
+                <input type="checkbox" id="item">
+                <label for="none">Bolacha</label>
+                <img src="img/lixeira.png" alt="lixeira">
+            </div>
+            <div class="card-item">
+                <input type="checkbox" id="item">
+                <label for="none">Pão de forma</label>
+                <img src="img/lixeira.png" alt="lixeira">
+            </div>
+            <div class="alert">
+                <img src="img/warning-circle-filled.png" alt="Alerta">
+                <p>O item foi removido da lista</p>
+                <img src="img/delete-small.png" alt="">
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>
