@@ -47,6 +47,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     width: 50vw;
     height: 50vh;
@@ -57,7 +58,21 @@ main {
 .btn-voltar {
     color: var(--cor-principal);
     font-family: var(--fonte);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
+}
+
+.container-input {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-item {
+    background-color: var(--cor-principal);
+    color: var(--background);
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
 }
