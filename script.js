@@ -11,13 +11,13 @@ shopBtn.addEventListener("click", function () {
   +-------------+
 */
 
-  const listItem = document.createElement("li"); // Cria um item da lista
+  const listItem = document.createElement("li"); // Cria um item que será adicionado na lista posteriormente
   /*
   +-------------+
   | item 1      |
   | item 2      |
   | item 3      |
-  | *item 4     | -> este é o listItem que acabamos de criar que **ainda não foi adicionado** na lista geral de itens
+  | *item 4     | -> este é o listItem (li) que acabamos de criar que **ainda não foi adicionado** na lista geral de itens
   +-------------+
 */
 
@@ -40,7 +40,7 @@ shopBtn.addEventListener("click", function () {
   // Cria o span
   const span = document.createElement("span");
   span.innerHTML = shopInput.value;
-  listItem.appendChild(span); // adiciona no item da lista
+  listItem.appendChild(span); // adiciona o texto digitado pelo usuário no item em memória
 
   /*
   +-------------+
@@ -57,7 +57,7 @@ shopBtn.addEventListener("click", function () {
   const img = document.createElement("img");
   img.src = "img/lixeira.png";
   img.alt = "lixeira";
-  listItem.appendChild(img); // adiciona no item da lista
+  listItem.appendChild(img); // adiciona a imagem no item em memória
 
   /*
   +-------------+
