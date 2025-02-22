@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 :root {
     --background: #f4f5fb;
@@ -49,8 +50,7 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    width: 50vw;
-    height: 50vh;
+    width: 45vw;
     padding: 20px;
     gap: 20px;
 }
@@ -64,15 +64,88 @@ main {
 }
 
 .container-input {
-    width: 50%;
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.shop-input {
+    background-color: #ffffff;
+    width: 33vw;
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid #747474;
+    transition: 0.3s;
+}
+.shop-input:focus{
+    border: 2px solid var(--hover);
+}
+.add-item {
+    background-color: var(--cor-principal);
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 10vw;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.add-item:hover {
+    background-color: var(--hover);
+}
+
+.input-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block: 10px;
+    gap: 15px;
+}
+
+li {
+    background-color: #ffffff;
+    font-family: var(--fonte);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.add-item {
-    background-color: var(--cor-principal);
-    color: var(--background);
+li input {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #747474;
+    border-radius: 6px;
+}
+
+li input:checked {
+    accent-color: var(--cor-principal);
+    
+}
+
+.del-btn {
+    border: 0;
+    cursor: pointer;
+}
+
+.alert {
+    background-color: var(--danger);
+    width: 43vw;
+    display: none;
+    justify-content: space-between;
+    align-self: center;
     padding: 10px;
-    border: none;
     border-radius: 12px;
+    position: absolute;
+    bottom: 20px;
 }

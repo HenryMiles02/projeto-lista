@@ -18,41 +18,21 @@
         <a href="#" class="btn-voltar">&#x1F814 Voltar</a>
         <h1>Compras da semana</h1>
         <div class="container-input">
-            <input type="text" id="shopInput" name="item" placeholder="Adicione um novo item" required>
-            <button class="add-item" id="shopBtn">adicionar item</button>
+            <input type="text" id="shopInput" name="item" placeholder="Adicione um novo item" class="shop-input" required>
+            <button class="add-item" id="shopBtn">Adicionar item</button>
         </div>
         <ul class="input-list" id="shopList">
-            <li class="card-item">
+            <li>
                 <input type="checkbox" id="item">
                 <span for="none">Pão de forma</span>
                 <img src="img/lixeira.png" alt="lixeira">
             </li>
-            <li class="card-item">
-                <input type="checkbox" id="item">
-                <span for="none">Café preto</span>
-                <img src="img/lixeira.png" alt="lixeira">
-            </li>
-            <li class="card-item">
-                <input type="checkbox" id="item">
-                <span for="none">Suco de laranja</span>
-                <img src="img/lixeira.png" alt="lixeira">
-            </li>
-            <li class="card-item">
-                <input type="checkbox" id="item">
-                <span for="none">Bolacha</span>
-                <img src="img/lixeira.png" alt="lixeira">
-            </li>
-            <li class="card-item">
-                <input type="checkbox" id="item">
-                <span for="none">Pão de forma</span>
-                <img src="img/lixeira.png" alt="lixeira">
-            </li>
-            <!--<li class="alert">
-                <img src="img/warning-circle-filled.png" alt="Alerta">
-                <p>O item foi removido da lista</p>
-                <img src="img/delete-small.png" alt="">
-            </li>-->
         </ul>
+        <div class="alert" id="danger">
+            <img src="img/warning-circle-filled.png" alt="Alerta">
+            <p>O item foi removido da lista</p>
+            <img src="img/delete-small.png" alt="">
+        </div>
     </main>
 
     <script src="script.js"></script>
