@@ -29,16 +29,9 @@ body {
     gap: 50px;
     background-color: var(--background);
     font-family: var(--fonte);
+    width: 100vw;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100vw;
-    height: 100px;
-}
 
 .logo {
     font-family: var(--fonte);
@@ -148,4 +141,30 @@ li input:checked {
     border-radius: 12px;
     position: absolute;
     bottom: 20px;
+}
+
+@media (max-width: 950px) {
+    .container-input {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .shop-input {
+        width: 100%;
+    }
+
+    .add-item {
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 90vw;
+    }
+
+    .alert {
+        width: 90vw;
+    }
 }
