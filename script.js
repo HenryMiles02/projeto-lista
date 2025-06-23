@@ -2,8 +2,11 @@ const shopInput = document.getElementById('shopInput');
 const shopBtn = document.getElementById('shopBtn');
 const shopList = document.getElementById('shopList');
 const img = document.querySelector('img');
+const danger = document.getElementById('danger');
+const text = document.getElementById('text');
 
 shopBtn.addEventListener("click", function () {
+  if (shopInput.value) {
   const listItem = document.createElement('li');
     listItem.innerHTML = `
       <input type="checkbox" id="item">
@@ -16,26 +19,23 @@ shopBtn.addEventListener("click", function () {
 
   img.addEventListener("click", function () {
     listItem.remove()
-  });
-
-    shopList.appendChild(listItem);
-
-    shopInput.value = "";
-
-    const danger = document.getElementById('danger');
     danger.style = `
     display: flex;
     `
-
+  
     function removeAlert() {
       setTimeout(function () {
         danger.style = `
         display: none;
         `
-      }, 5000);
+      }, 4000);
     }
-
+  
     removeAlert();
   });
 
-  
+    shopList.appendChild(listItem);
+
+    shopInput.value = "";
+    }
+  });
